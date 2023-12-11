@@ -1,0 +1,256 @@
+body{
+    background-image: url(https://blogmaladeviagem.com.br/wp-content/uploads/2016/11/Blog-Mala-de-Viagem-cancun.jpg);
+    background-size: 150%;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    color:rgb(255, 255, 255);
+    background-color: rgb(76, 120, 145);
+}
+  
+.container{
+    width: 100%;
+    height: 1000px;
+}
+  
+.cabeçalho{ 
+    display: flex;
+    background-color: rgb(76, 120, 145);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    width: 139%;
+    height: 94px;
+    margin-left: -220px;
+    margin-top: -10px;
+}
+  
+.cab_letras{
+    display: flex;
+    background-color: #52494900;
+    margin-left: 190px;
+    margin-top: 5px;
+   
+}
+  
+#letrasCA{
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+  
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(195, 216, 221, 0);
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-left: 130px;
+    height: 40px;
+    width: 80px;
+}
+  
+li a,.dropbtn{
+    display: inline-block;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+}
+  
+li a:hover, .dropdown:hover .dropntn{
+    background-color: rgba(232, 231, 231, 0);
+    margin-left: -7px;
+    margin-top: -30px;
+}
+  
+#img1{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-left: -1370px;
+    margin-top: 15px;
+    width: 190px;
+    height: 70px;
+}
+
+.caixona{
+   margin-top: 90px;
+}
+  
+.full-height{
+  min-height: 100vh;
+}
+  [type="checkbox"]:checked,
+  [type="checkbox"]:not(:checked){
+  display: none;
+}
+  
+  
+/*cores da setinha e formas (tamanhos dela, fontes e fornas)*/
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before{
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-top: 160px;
+    margin-left: 750px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: rgb(39, 39, 39);
+    font-family: 'unicons';
+    content: '\eb4f';
+    top: -10px;
+    left: -10px;
+    text-align: center;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+  
+/* caixa principal de fundo */
+.card-3d-wrap {
+    position: relative;
+    width: 440px;
+    height: 590px;
+/* perspectiva da caixa na hora que ela for girar */
+    perspective: 800px;
+    margin-top: 60px;
+    margin-left: 0px;
+}
+  
+/* o que faz a caixa mover */
+.card-3d-wrapper {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    transform-style: preserve-3d;
+    transition: all 600ms ease-out; 
+}
+  
+.frente-do-cartão, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-transform-style: preserve-3d;
+}
+  
+/*o que faz girar*/
+.card-back {
+    transform: rotateY(180deg);
+    background-color:rgb(39, 39, 39);
+}
+
+/*o que faz girar*/
+.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+    transform: rotateY(180deg);
+}
+  
+/*caixa onde fica as coisas para responder*/
+.center-wrap{
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+}
+  
+/*é cada barrinha*/
+.form-group{ 
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+  
+/*é ele que deixa a decoração melhor, mais estilosa*/
+.form-style {
+    padding: 13px 20px;
+    padding-left: 55px;
+    height: 48px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgb(182, 179, 155);
+    color: rgb(45, 44, 44);
+    border: none;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(95, 100, 103, 0.386);
+}
+  
+/*caixinha dos logos*/
+.input-icon {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    -webkit-transition: all 200ms linear;
+     transition: all 200ms linear;
+}
+.btn{  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(76, 120, 145);
+    color: #ffffff;
+}
+.btn2{  
+    
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(76, 120, 145);
+    color: #ffffff;
+}
+
+.btn:hover{  
+    background-color:rgb(146, 184, 206);
+    color: #ffffff;
+    box-shadow: 0 8px 24px 0 rgba(255, 255, 255, 0.39);
+}
+
+#videoElement{
+    width: 190px;
+    height: 70px;
+    margin-left: 90px;
+
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao{
+    width: 190px;
+    height: 30px;
+    margin-left: 85px;
+    margin-top: 25px;
+}

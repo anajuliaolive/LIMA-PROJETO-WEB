@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Entrar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="icon" href="img/entrar.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/entrar.css">
+</head>
+
+<body>
+<!--div container-->
+<div class="container">
+              
+  <!--div cabeçalho-->
+  <div class="cabeçalho">
+
+    <!--div letras cabeçalho-->
+    <div class="cab_letras">
+         <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/passeios.html"> <h4 id="letrasCA">Passeios </h4> </a> </li>
+         <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/pacotes.html"> <h4 id="letrasCA">Pacotes </h4> </a> </li>
+         <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/hoteis.html"> <h4 id="letrasCA">Hoteis</h4> </a> </li>
+         <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/pagamentos.html"> <h4 id="letrasCA">Pagamentos</h4> </a> </li>
+         <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/ajuda.html"> <h4 id="letrasCA">Ajuda</h4> </a> </li>
+         <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/entrar.html"> <h4 id="letrasCA">Entrar</h4> </a> </li>  
+    </div>
+
+           <div>
+                <!--imagem logo-->
+                <a href="http://127.0.0.1:5500/site%20viagem/Inicio.html"><img id="img1" src="img/logo.png"> </a>
+           </div>
+
+</div>  
+
+
+    <div class="caixona">
+
+     <!--setinha de mudar os lados-->
+	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+
+          <!--o que faz a seta mudar de posição-->
+		<label for="reg-log"></label>
+
+               <!--caixa principal de fundo-->
+			<div class="card-3d-wrap mx-auto">
+
+				<div class="card-3d-wrapper">
+
+					<div class="frente-do-cartão">
+
+						<div class="center-wrap">
+
+							<div class="section text-center">
+                                   <h4>Entrar</h4>
+							 
+                                        <!--barrinha-->
+								<div class="form-group">
+									<input type="email" class="form-style" placeholder="Email">
+									<i class="input-icon uil uil-at"></i>
+								</div>	
+
+                                        <!--barrinha-->
+								<div class="form-group mt-2">
+									<input type="password" class="form-style" placeholder="Senha">
+									<i class="input-icon uil uil-lock-alt"></i>
+								</div>
+
+                                        <!--barrinha-->
+								<a href="http://127.0.0.1:5500/site%20viagem/pagamentos.html" class="btn mt-4">Entre</a>
+								
+								<a class="btn2 mt-4">Entre com reconhecimento facial:</a>
+                                   </div>   
+								<div><video id="videoElement" autoplay></video></div>
+                                <div><button id="botao" onclick="starCamera()">abre camera</button>
+                                 <button id="botao" onclick="stopCamera()">para camera</button></div>
+			                     <script src="JS/entrar.js"></script>  
+                              </div>
+			      	</div>
+				     <div class="card-back">
+						<div class="center-wrap">
+							<div class="section text-center">
+								<h4 class="mb-3 pb-3">Cadastre-se</h4>
+								<div class="form-group">
+									<input type="text" class="form-style" placeholder="Nome Completo">
+									<i class="input-icon uil uil-user"></i>
+								</div>	
+								<div class="form-group mt-2">
+									<input type="tel" class="form-style" placeholder="Número de telefone">
+									<i class="input-icon uil uil-phone"></i>
+								</div>	
+               <div class="form-group mt-2">
+								<input type="email" class="form-style" placeholder="Email">
+								<i class="input-icon uil uil-at"></i>
+								</div>
+								<div class="form-group mt-2">
+									<input type="password" class="form-style" placeholder="Senha">
+								     <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <a href="http://127.0.0.1:5500/site%20viagem/pagamentos.html" class="btn mt-4">Registre-se</a>
+                                   </div>                       
+						</div>
+                    </div>                						
+				</div> 
+			</div> 
+     </div>
+</div>	
+</body>
+</html>

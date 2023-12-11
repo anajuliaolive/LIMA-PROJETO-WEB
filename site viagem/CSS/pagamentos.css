@@ -1,0 +1,456 @@
+body{
+    background-image: url(#);
+    background-color: rgb(232, 239, 243);
+    font-size: 40px;
+}
+
+.container{
+    width: 1510px;
+    height: 1100px;
+}
+
+.cabeçalho{ 
+    display: flex;
+    background-color: rgb(76, 120, 145);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    width: 101%;
+    height: 95px;
+    margin-left: -7px;
+    margin-top: -10px;
+}
+
+.cab_letras{
+    display: flex;
+    background-color: #52494900;
+    margin-left: 190px;
+    margin-top: 0px;
+}
+
+#letrasCA{
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(195, 216, 221, 0);
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-left: 130px;
+    height: 40px;
+    width: 80px;
+}
+
+li a,.dropbtn{
+    display: inline-block;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+   
+}
+
+li a:hover, .dropdown:hover .dropntn{
+    background-color: rgba(232, 231, 231, 0);
+    margin-left: -7px;
+    margin-top: -30px;
+}
+
+#imglogo{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-left: -1370px;
+    margin-top: 11px;
+    width: 190px;
+    height: 70px;
+}
+
+.caixa1{
+    background-color: rgba(76, 120, 145, 0.642);
+    width: 1500px;
+    height:150px;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+#txt{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 40px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+#txt2{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 90px;
+}
+
+#imghotel{
+    width: 150px;
+    height: 140px;
+    margin-left: 500px;
+    margin-top: 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-wrapper{
+   width: 1250px;
+   margin: 6rem auto;
+   border-radius: 24px;
+   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.158);
+   display: block;
+   background-color:#ffffff;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(76, 120, 145);
+    padding: 36px 30px;
+    border-radius:  24px 24px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-info{
+    font-size: 14pt;
+    color: #ffffff;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-info span{
+    margin-left: 10px;  
+}
+
+.voltar{
+    width: 20px;
+    height: 20px;
+}
+
+.caixabran{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 40px;
+    border-radius:  0px 0px 35px 35px;
+    justify-content: center;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*caixona de dados do cartão*/
+.credit-card-info{
+    display: flex;
+    flex-direction: column;
+    width:350px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -15px;
+}
+
+/*caixona numero do cartão*/
+.credit-card-number{
+    padding:6px 12px;
+    border-radius: 4px;
+    width: 100%;
+    outline-style: none;
+    border: solid 1.8px #bdb9b7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*imagem cartão*/
+#card-img{
+    width: 20px;
+    height: 20px;
+    color:rgb(76, 120, 145);
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+/*caixa de digitar o numero do cartão*/
+.credit-card-number input{
+    outline-style: none;
+    border: none;
+    background-color: transparent;
+    font-size: 12pt;
+}
+
+/*caixa de validade/ telefone/ data de nascimento*/
+#card-validity, #phone{
+    padding:10px 12px;
+    border-radius: 4px;
+    width: 165px;
+    outline-style: none;
+    border: solid 1.8px #bdb9b7;
+    font-size: 12pt;
+}
+
+/*cadeado imagem*/
+#cadeado-img{
+   height: 20px;
+   width: 20px;
+}
+
+/*caixa validade e código de segurança*/
+.validity-and-sc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*caixa telefone e data de nascimento*/
+.phone-and-birthday{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*caixa telefone e data de nascimento*/
+.phone, .birthday{
+    display: flex;
+    flex-direction: column;
+}
+
+/*caixa validade e código de segurança*/
+.validity, .security-code{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*caixa código de segurança*/
+.card-security-code-input-and-icon{
+    display: flex;
+    flex-direction: row;
+    padding:6px 12px;
+    border-radius: 4px;
+    width: 165px;
+    outline-style: none;
+    border: solid 1.8px #bdb9b7;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*caixa de digitar código de segurança*/
+#card-security-code{
+    width: 80px;
+    font-size: 12pt;
+    outline-style: none;
+    border: none;
+}
+
+/*caixa nome completo e CPF*/
+#name, #cpf{
+    padding:10px 12px;
+    border-radius: 4px;
+    width: 100%;
+    outline-style: none;
+    border: solid 1.8px #bdb9b7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12pt;
+}
+
+/*textos*/
+label{
+    font-weight: 600;
+    font-size:10pt;
+    margin-top: 16px;
+}
+
+/*caixa parcelas*/
+#parcela{
+    padding:10px 12px;
+    border-radius: 4px;
+    width: 100%;
+    outline-style: none;
+    border: solid 1.8px #bdb9b7;
+    font-size: 12pt;
+    position: relative;
+}
+
+/*texto (Dados do titular do cartão) e (Resumo do pedido)*/
+h2{
+    font-family: 'Open Sans';
+    font-size: 16pt;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+#verificado{
+    width: 20px;
+    height: 20px;
+}
+.payment-steps{
+    width: 100%;
+    padding:0px 20px;
+    padding-top: 28px;
+    padding-bottom: 46px;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #efebe9;
+    border-top: solid 2px #efebe9; 
+}
+
+.steps-circles-wrapper{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(76, 120, 145);
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 8px;
+    border-radius: 12px;
+    width: 720px;
+    z-index: 1;
+    padding: 0px 100px;
+    margin: 8px 0px;
+}
+
+.step-circle{
+    width: 42px;
+    height: 42px;
+    border: solid 3px rgb(76, 120, 145);
+    border-radius: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: rgb(76, 120, 145);
+    font-size: 24pt;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.step-description{
+    position: absolute;
+    font-size: 12pt;
+    color: #8c7b75;
+    font-weight: 700;
+    margin-top: 76px;
+}
+
+#step-checked{
+    font-weight: 400;
+}
+
+#money-img{
+    background-color: red;
+    margin-left: 2px;
+    font-size: 20pt;
+}
+
+.user-shop-cart-info-wrapper{
+    background-color: #ffffff;
+    padding: 20px 50px;
+    border-radius:  0px 12px 12px 0px;
+}
+
+.request-card{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+}
+.request-card p{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 12pt;
+    
+}
+.request-card h3{
+   font-size: 11pt;
+}
+
+#finish-payment{
+    border: none;
+    outline-style: none;
+    background-color:  rgb(156, 181, 195);
+    color:  rgb(76, 120, 145);
+    font-size: 14pt;
+    font-weight: 400;
+    padding: 18px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 26px;
+
+}
+#request-itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #efebe9;
+}
+#credit-card-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #efebe9;
+}
+#cc-option{
+    font-size: 20pt;
+    margin-right: 10px;
+    color:  rgb(76, 120, 145);
+}
+
+#payment-process-time{
+    padding-bottom: 10px;
+    border-bottom: solid 2px #efebe9;
+}
+
+#request-price{
+    font-weight: 600;
+    font-size: 14pt;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px
+}
+
+#payment-portion{
+    font-size: 12pt;
+    font-weight: 600;
+  
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/de-praia.png">
+    <link rel="stylesheet" type="text/css" href="CSS/inicio.css">
+    <title>Início</title>
+</head>
+<body>
+<!--div container-->
+<div class="container">
+
+     <!--div cabeçalho-->
+      <div class="cabeçalho">
+
+           <!--div letras cabeçalho-->
+           <div class="cab_letras">
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/passeios.html"> <h4 id="letrasCA">Passeios </h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/pacotes.html"> <h4 id="letrasCA">Pacotes </h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/hoteis.html"> <h4 id="letrasCA">Hotéis</h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/pagamentos.html"> <h4 id="letrasCA">Pagamentos</h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/ajuda.html"> <h4 id="letrasCA">Ajuda</h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/entrar.html#"> <h4 id="letrasCA">Entrar</h4> </a> </li>  
+           </div>
+
+                  <div>
+                       <!--imagem logo-->
+                       <a href="http://127.0.0.1:5500/site%20viagem/Inicio.html"><img id="img1" src="img/logo.png"> </a>
+                  </div>
+
+      </div>  
+     
+   
+<!--div corpo1-->
+<div class="corpo1">
+
+      <!--frase de capa-->
+     <div id="frase">
+     Viajar é encontrar coisas que você<br> 
+     nunca soube que estava procurando!
+     </div>
+
+           <!--div caixona-->
+           <div id="caixona">
+
+                 <!--div caixa de pesquisa-->
+                 <div id="divBusca">
+                      <input type="text" id="txtBusca" placeholder="Qual será seu destino?">
+              
+                      <!--div botão-->
+                      <div>
+                         <a class="btn mt-4">Pesquisar</a>
+                      </div>
+                 </div>
+                 
+         </div>
+         
+        <input id="calendário1" type="date" value="2023-01-01"> 
+        <h4 id="entrada"> Entrada: </h4>
+        <input id="calendário2" type="date" value="2023-12-01">
+        <h4 id="saída"> Saída: </h4>
+</div>
+
+  <button onclick="getLocation()" class="btn2">Obter sua Localização</button>
+  <p id="latitude">Latitude: <span id="latitude"></span></p>
+  <p id="longitude">Longitude: <span id="longitude"></span></p>
+  <div id="map"></div>
+ 
+<script>
+     let map;
+ 
+     function initMap(latitude, longitude) {
+       if (!isNaN(parseFloat(latitude)) && !isNaN(parseFloat(longitude))) {
+         map = new google.maps.Map(document.getElementById('map'), {
+           center: { lat: parseFloat(latitude), lng: parseFloat(longitude) },
+           zoom: 12
+         });
+ 
+         new google.maps.Marker({
+           position: { lat: parseFloat(latitude), lng: parseFloat(longitude) },
+           map: map,
+           title: 'Sua Localização'
+         });
+       } else {
+         alert('Coordenadas inválidas.');
+       }
+     }
+ 
+     function getLocation() {
+       if (navigator.geolocation) {
+         navigator.geolocation.getCurrentPosition(showPosition, showError);
+       } else {
+         alert('Geolocalização não é suportada por este navegador.');
+       }
+     }
+ 
+     function showPosition(position) {
+       const latitudeElement = document.getElementById('latitude');
+       const longitudeElement = document.getElementById('longitude');
+ 
+       latitudeElement.innerText = position.coords.latitude;
+       longitudeElement.innerText = position.coords.longitude;
+ 
+       initMap(position.coords.latitude, position.coords.longitude);
+     }
+ 
+     function showError(error) {
+       switch(error.code) {
+         case error.PERMISSION_DENIED:
+           alert('Permissão para geolocalização foi negada pelo usuário.');
+           break;
+         case error.POSITION_UNAVAILABLE:
+           alert('Informações de localização indisponíveis.');
+           break;
+         case error.TIMEOUT:
+           alert('Tempo limite esgotado ao tentar obter a localização.');
+           break;
+         case error.UNKNOWN_ERROR:
+           alert('Ocorreu um erro desconhecido ao tentar obter a localização.');
+           break;
+       }
+     }
+   </script>
+</div>
+</body>
+</html>

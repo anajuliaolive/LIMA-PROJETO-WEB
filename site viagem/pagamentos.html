@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/cartao-de-credito.png">
+    <link rel="stylesheet" type="text/css" href="CSS/pagamentos.css">
+    <title>Pagamentos</title>
+</head>
+<body>
+<!--div container-->
+<div class="container">
+
+     <!--div cabeçalho-->
+     <div class="cabeçalho">
+
+          <!--div letras cabeçalho-->
+          <div class="cab_letras">
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/passeios.html"> <h4 id="letrasCA">Passeios </h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/pacotes.html"> <h4 id="letrasCA">Pacotes </h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/hoteis.html"> <h4 id="letrasCA">Hoteis</h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/pagamentos.html"> <h4 id="letrasCA">Pagamentos</h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/ajuda.html"> <h4 id="letrasCA">Ajuda</h4> </a> </li>
+                <li class="caixa"> <a href="http://127.0.0.1:5500/site%20viagem/entrar.html#"> <h4 id="letrasCA">Entrar</h4> </a> </li>  
+          </div>
+               <div>
+                    <!--imagem logo-->
+                    <a href="http://127.0.0.1:5500/site%20viagem/Inicio.html"><img id="imglogo" src="img/logo.png"> </a>
+               </div>
+     </div> 
+    
+          <main class="main-wrapper">
+               <div class="header">
+                    <p class="header-info">
+                    <img src="img/voltar.png" class="voltar">
+                    <span>Voltar ao pacote</span>
+                    </p>
+               </div>
+
+                    <div class="payment-steps">
+     
+                         <div class="steps-circles-wrapper">
+                              <div class="step-circle"  id='filled'>  <img src="img/verifica.png" id="verificado"><p class="step-description" id="step-checked">Compra</p></div>
+                              <div class="step-circle"  id='filled'> <img src="img/verifica.png" id="verificado"> <p class="step-description" id="step-checked">Dados de entrega</p> </div>
+                          <div class="step-circle"> <img src="img/verifica.png" id="verificado"> <p class="step-description">Pagamento</p></div>
+                         </div>
+                    </div>
+             
+             <div class="caixabran">
+         
+                 <div class="caixadadoscartão">
+                     
+                     <h2>Dados do titular do cartão</h2>
+                     <form class="credit-card-info">
+                         <label for="card-number">Número do cartão</label>
+                         <div class="credit-card-number">
+                             <input type="number" name="card-number" id="card-number">
+                             <img id="card-img" src="img/cartao-do-banco.png">
+                         </div>
+     
+                
+                     
+                         <div class="validity-and-sc">
+                             <div class="validity">
+                                 <label for="card-validity">Validade</label>
+                                 <input type="number" name="card-validity" id="card-validity" placeholder="MM/AA">
+                             </div>
+                             
+                          
+                             <div class="security-code">
+                                 <label for="card-security-code">Código de segurança</label>
+                                 <div class="card-security-code-input-and-icon">
+                                     <input type="number" name="card-security-code" id="card-security-code" placeholder="CVV">                       
+                                     <img src="img/cadeado-trancado.png" id="cadeado-img">
+                                 </div>
+                             </div>
+                        
+                             
+                         </div>
+                         <label for="name">Nome completo</label>
+                         <input type="text" name="name" id="name">
+     
+                         <label for="cpf">CPF</label>
+                         <input type="number" name="cpf" id="cpf" placeholder="___-___-___-__">
+     
+     
+                        <div class="phone-and-birthday">
+     
+                             <div class="phone">
+                                 <label for="card-validity">Telefone</label>
+                                 <input type="number" name="phone" id="phone" placeholder="(__) _____ - ____">
+                             </div>
+     
+                             <div class="birthday">
+                                 <label for="card-validity">Data de nascimento</label>
+                                 <input type="number" name="phone" id="phone" placeholder="DD/MM/AAAA">
+                             </div>
+                        </div>
+     
+                        <label for="parcela">Parcelas</label>
+                        <select id="parcela">
+                             
+                             <option value="0">5x de R$ 4034,00 sem juros</option>
+                             <option  value="1">12x de R$ 5608,00 sem juros</option>
+                             <option  value="2">5x de R$ 3170,00 sem juros</option>
+                             <option  value="3">12x de R$ 6796,50 sem juros</option>
+                             <option  value="4">4x de R$ 3865,00 sem juros</option>
+                             <option  value="5">10x de R$  5245,00 sem juros</option>
+                             <option  value="5">12x de R$  6078,00 sem juros</option>
+                             <option  value="5">4x de R$  3076,00 sem juros</option>
+                        </select>
+                     </form>
+                         
+                 </div>
+     
+     
+                 <div class="user-shop-cart-info-wrapper">
+     
+     
+                     <div class="request-card">
+                         <h2>Resumo do pedido</h2>
+     
+                         <h3>Itens do pedido</h3>
+                         <p id="request-itens"> Pacote de viagem</p>
+                         <h3>Forma de Pagamento</h3>
+                         <p id="credit-card-icon">
+                         </span> Cartão de crédito</p>
+                         <h3>Tempo de processamento</h3>
+                         <p id="payment-process-time">1 dia útil</p>
+                         <h3>Total a pagar</h3>
+                         <p id="request-price">R$4096,00 <sapn id="payment-portion">4x sem juros</sapn> </p>
+                         <input type="button" value="Finalizar Compra" onclick="botãofinalizar()" id="finish-payment">
+                     </div>
+     
+                 </div>
+     
+             </div>
+     
+         </main>
+
+
+
+</div>
+<script src="pagamentos.js"></script>
+</body>
+</html>

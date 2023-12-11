@@ -1,0 +1,282 @@
+body{
+    background-image: url(https://www.viagenscinematograficas.com.br/wp-content/uploads/2021/01/Joao-Pessoa-Paraiba-Praias-Capa-2.jpg);
+    background-size: 1600px 700px;
+    background-repeat: no-repeat;
+    background-color: #4c7891;
+    font-size: 40px;
+}
+
+.container{
+    width: 100%;
+    height: 900px;
+}
+
+.cabeçalho{ 
+    display: flex;
+    background-color: rgb(76, 120, 145);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    width: 101%;
+    height: 80px;
+    margin-left: -7px;
+    margin-top: -10px;
+}
+
+.cab_letras{
+    display: flex;
+    background-color: #52494900;
+    margin-left: 190px;
+    margin-top: -8px;
+}
+
+#letrasCA{
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(195, 216, 221, 0);
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-left: 130px;
+    height: 40px;
+    width: 80px;
+}
+
+li a,.dropbtn{
+    display: inline-block;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+   
+}
+
+li a:hover, .dropdown:hover .dropntn{
+    background-color: rgba(232, 231, 231, 0);
+    margin-left: -7px;
+    margin-top: -30px;
+}
+
+#img1{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-left: -1370px;
+    margin-top: 5px;
+    width: 190px;
+    height: 70px;
+}
+
+#caixona{
+    background-color:rgba(154, 194, 230, 0.314);
+    border-radius: 30px;
+    margin-top: 1050px;
+    margin-left: -700px;
+    height: 200px;
+    width: 1100px;
+}
+
+#frase{
+    display: flex;
+    align-self: center;
+    font-family: 'Dongle', sans-serif;
+    margin-top: 400px;
+    margin-left: 90px;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: rgb(125, 129, 130) 1px 2px 5px;
+}
+
+#divBusca{
+    background-color:rgb(233, 245, 248);
+    border:solid 2px #00000000;
+    border-radius:10px;
+    width:1010px;
+    height:90px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+  
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    border: solid 2px rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-left:10px;
+    font-size:18px;
+    height:32px;
+    width:400px;
+}
+ 
+#botton{
+    position: relative;
+    height:85px;
+    width:108px;
+    border-radius:0 7px 7px 0;
+    background-color: rgb(76, 120, 145);
+    color: #ffffff;
+}
+
+.btn{  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(76, 120, 145);
+    color: #ffffff;
+    font-family: 'Dongle', sans-serif;
+    margin-left: 420px;
+    margin-top: 25px;
+    text-decoration: none;
+  }
+
+.btn:hover{  
+    background-color:rgb(146, 184, 206);
+    color: #ffffff;
+    box-shadow: 0 8px 24px 0 rgba(255, 255, 255, 0.674);
+  }
+
+
+#calendário1{
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px rgba(0, 0, 0, 0);
+    border-radius: 5px ;
+    position: absolute;
+    margin-top: 1070px;
+    margin-left: 770px;
+    width: 100px;
+    height:20px ;
+    z-index: 1;
+}
+
+#entrada{
+    position: absolute;
+    margin-top: 1040px;
+    margin-left: 770px; 
+    font-family: 'Archivo Black', sans-serif; 
+    font-family: 'Dongle', sans-serif;
+    color: rgb(76, 120, 145);
+    font-size: 18px;
+}
+
+#calendário2{
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px rgba(0, 0, 0, 0);
+    border-radius: 5px ;
+    position: absolute;
+    margin-top: 1070px;
+    margin-left: 950px;
+    width: 100px;
+    height:20px ;
+    z-index: 1;
+}
+
+#saída{
+    position: absolute;
+    margin-top: 1040px;
+    margin-left: 950px; 
+    font-family: 'Archivo Black', sans-serif; 
+    font-family: 'Dongle', sans-serif;
+    color: rgb(76, 120, 145);
+    font-size: 18px;
+}
+
+#img2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 50;
+    height: 50px;
+}
+
+#img3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 50px;
+    height: 30px;
+}
+
+#img4{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 90px;
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.corpo1{
+    width: 101%;
+    height: 170px;
+    margin-left: -7px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#latitude{
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: 600px;
+}
+
+#longitude{
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 600px;
+}
+
+.btn2{  
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition : all 200ms linear;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    background-color:rgb(233, 245, 248);
+    color: rgb(76, 120, 145);
+    font-family: 'Dongle', sans-serif;
+    margin-left: 420px;
+    margin-top: 25px;
+    text-decoration: none;
+    margin-top: 570px;
+    margin-left: 600px;
+  }
+
+.btn2:hover{  
+    background-color:rgb(146, 184, 206);
+    color: #ffffff;
+    box-shadow: 0 8px 24px 0 rgba(255, 255, 255, 0.674);
+  }
+

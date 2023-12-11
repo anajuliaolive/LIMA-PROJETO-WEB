@@ -1,0 +1,207 @@
+body{
+    background-image: url(https://todepassagem.clickbus.com.br/wp-content/uploads/2021/05/Como-tirar-fotos-na-praia-scaled.jpg);
+    background-size: 1600px 1210px;
+    background-repeat: no-repeat;
+    background-color: rgb(47, 90, 126);
+    font-size: 40px;
+}
+
+.container{
+    width: 100%;
+    height: 1200px;
+}
+
+.cabeçalho{ 
+    display: flex;
+    background-color: rgb(76, 120, 145);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    width: 101%;
+    height: 80px;
+    margin-left: -7px;
+    margin-top: -10px;
+}
+
+.cab_letras{
+    display: flex;
+    background-color: #52494900;
+    margin-left: 190px;
+    margin-top: -8px;
+}
+
+#letrasCA{
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+}
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(195, 216, 221, 0);
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-left: 130px;
+    height: 40px;
+    width: 80px;
+}
+
+li a,.dropbtn{
+    display: inline-block;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+   
+}
+
+li a:hover, .dropdown:hover .dropntn{
+    background-color: rgba(232, 231, 231, 0);
+    margin-left: -7px;
+    margin-top: -30px;
+}
+
+#img1{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-left: -1370px;
+    margin-top: 5px;
+    width: 190px;
+    height: 70px;
+}
+
+.caixa1{
+    background-color: rgba(76, 120, 145, 0.642);
+    width: 1500px;
+    height:150px;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+#txt{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 40px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+#txt2{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(62, 62, 62, 0.626) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 90px;
+}
+#img2{
+    width: 150px;
+    height: 130px;
+    margin-left: 600px;
+    margin-top: 10px;
+}
+
+.caixa_passeios_itália{
+    display: flex;
+    position: absolute;
+    background-color: rgba(227, 240, 248, 0);
+    width: 1500px;
+    height:550px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+#txt_passeio1{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(62, 62, 62) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.caixa_passeiostxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 120, 145);
+    width: 220px;
+    height: 45px;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+#passeiosit{
+    width: 270px;
+    height: 250px;
+    border: 5px solid rgba(255, 255, 255, 0.49);
+    border-radius: 30px;
+    margin-left: 75px;
+    margin-top: 0px;
+}
+
+#passeiosit:hover{
+    transition-duration: 500ms;
+    width: 310px;
+    height: 290px;
+}
+
+#txt_passeio2{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(62, 62, 62) 1px 2px 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.caixa_passeiostxt_bra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 120, 145);
+    width: 220px;
+    height: 45px;
+    border-radius: 40px;
+    margin-top: 350px;
+    margin-left: 80px;
+}
+
+.caixa_passeios_brasil{
+    display: flex;
+    position: absolute;
+    background-color: rgba(227, 240, 248, 0);
+    width: 1500px;
+    height:300px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+#passeiosbra{
+    width: 270px;
+    height: 250px;
+    border: 5px solid rgba(255, 255, 255, 0.49);
+    border-radius: 30px;
+    margin-left: 75px;
+    margin-top: 0px;
+}
+
+#passeiosbra:hover{
+    transition-duration: 500ms;
+    width: 310px;
+    height: 290px;
+}
+
